@@ -58,6 +58,7 @@ struct ContentView: View {
                 }
             }
         }
+        Spacer()//Añadido para alinearlo a la zona superior
     }
 }
 
