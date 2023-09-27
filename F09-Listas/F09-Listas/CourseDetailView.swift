@@ -33,11 +33,20 @@ struct CourseDetailView: View{
                 .padding(.bottom, 2)
             
             HStack(spacing: 2){
-                ForEach(1...(course.difficulty), id: \.self){ _ in
+                Text("Dificultad: ")
+                    .font(.caption)
+                    .bold()
+                    .foregroundStyle(.teal)
+                
+                Image(systemName: "cellularbars", variableValue: Double(course.difficulty)/4)
+                    .font(.subheadline)
+                    .foregroundStyle(.teal)
+                
+                /*ForEach(1...(course.difficulty), id: \.self){ _ in
                     Image(systemName: "star.fill")
                         .font(.caption)
                         .foregroundStyle(.teal)
-                }
+                }*/
             }
             
             Text(course.description)
@@ -66,5 +75,5 @@ struct CourseDetailView: View{
 
 
 #Preview {
-    CourseDetailView(course: Course(name: "Álgebra Lineal", image: "algebralineal", author: "María Santos", difficulty: 1, description: "Curso para iniciarse en el mundo del álgebra lineal"))
+    CourseDetailView(course: Course(name: "Álgebra Lineal", image: "algebralineal", author: "María Santos", difficulty: 1, description: "Curso para iniciarse en el mundo del álgebra lineal", price: 19.99))
 }

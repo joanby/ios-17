@@ -14,4 +14,9 @@ struct Course: Identifiable{
     var author: String
     var difficulty: Int
     var description: String
+    var price: Float
+    var isFavourite: Bool = false
+    var isPurchased: Bool = false
 }
+
+
