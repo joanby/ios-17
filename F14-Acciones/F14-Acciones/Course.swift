@@ -14,6 +14,7 @@ struct Course: Identifiable{
     var author: String
     var difficulty: Int
     var description: String
+    var isFavourite: Bool = false
 }
 
 

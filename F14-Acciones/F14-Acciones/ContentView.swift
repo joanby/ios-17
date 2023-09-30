@@ -11,7 +11,7 @@ struct ContentView: View {
     
     
     
-    var courses = [
+    @State var courses = [
         Course(name: "Álgebra Lineal", image: "algebralineal", author: "María Santos", difficulty: 1, description: "Curso para iniciarse en el mundo del álgebra lineal"),
         Course(name: "Cálculo", image: "calculo", author: "Arnau Mir y Llorenç Valverde", difficulty: 2, description: "Descubre todo el mundo del cálculo en una variable y practica con Wolfram Alpha y Python"),
         Course(name: "Estadística Descriptiva", image: "descriptiva", author: "María Santos y Juan Gabriel", difficulty: 2, description: "Descubre la Estadística Descriptiva con R y Python"),
@@ -28,16 +28,76 @@ struct ContentView: View {
         Course(name: "Curso de Swift UI con iOS 13", image: "ios13", author: "Juan Gabriel Gomila", difficulty: 2, description: "El curso original que te enseña a crear apps con las novedades del sistema operativo de Apple y el nuevo Framework de Swift UI")
     ]
 
+    @State private var showDialog = false
+    @State private var selectedCourse: Course?
     
     var body: some View {
         List{
             ForEach(self.courses){ course in
                 SimpleImageRow(course: course)
+                    .contextMenu{
+                        Button(action: {
+                            self.delete(course: course)
+                        }) {
+                            HStack{
+                                Text("Eliminar")
+                                Image(systemName: "trash")
+                            }
+                        }
+                        
+                        Button(action: {
+                            self.setFavourite(course: course)
+                        }, label: {
+                            HStack{
+                                Text(course.isFavourite ? "Desmarcar de Favorito" : "Marcar como Favorito")
+                                Image(systemName: "star")
+                            }
+                        })
+                    }
+                    .onTapGesture {
+                        self.showDialog.toggle()
+                        self.selectedCourse = course
+                    }
+                    .confirmationDialog("Selecciona la acción a realizar", isPresented: self.$showDialog) {
+                        
+                        Button("Marcar como Favorito") {
+                            if let selectedCourse = self.selectedCourse{
+                                self.setFavourite(course: selectedCourse)
+                            }
+                        }
+                        
+                        Button("Eliminar curso", role: .destructive){
+                            if let selectedCourse = self.selectedCourse {
+                                self.delete(course: selectedCourse)
+                            }
+                        }
+                        
+                        Button("Cancelar", role: .cancel) {
+                            self.showDialog = false
+                        }
+                    }
             }
-            .listRowSeparatorTint(.teal)
+            .onDelete { (indexSet) in
+                self.courses.remove(atOffsets: indexSet)
+            }
         }
         .listStyle(.insetGrouped)
     }
+    
+    
+    private func delete(course: Course){
+        if let index = self.courses.firstIndex(where: { $0.id == course.id }){
+            self.courses.remove(at: index)
+        }
+    }
+    
+    private func setFavourite(course: Course){
+        if let index = self.courses.firstIndex(where: {$0.id == course.id}){
+            self.courses[index].isFavourite.toggle()
+        }
+    }
+    
+    
 }
 
 
@@ -61,6 +121,13 @@ struct SimpleImageRow: View {
                 .cornerRadius(25)
             
             Text(course.name)
+            
+            if (course.isFavourite){
+                Spacer()
+                
+                Image(systemName: "star.circle")
+                    .foregroundStyle(.yellow)
+            }
         }
     }
 }
