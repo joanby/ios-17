@@ -52,20 +52,37 @@ struct ArticleDetail: View {
             .lineLimit(100)
             .multilineTextAlignment(.leading)
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .ignoresSafeArea(.all, edges: .top)
-        .navigationBarBackButtonHidden(true)
-        .toolbar{
-            ToolbarItem(placement: .topBarLeading){
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "arrow.left.circle.fill")
-                }
-                .tint(.white)
-            }
-        }
+        .ignoresSafeArea()
+        .overlay(
         
+            HStack {
+                Spacer()
+                VStack {
+                    Button{
+                        self.showAlert = true
+                    } label: {
+                        Image(systemName: "x.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundStyle(.gray)
+                    }
+                    .padding(.trailing, 16)
+                    .padding(.top, 24)
+                    Spacer()
+                }
+            }
+        ).alert("¡Cuidado!", isPresented: $showAlert, actions: {
+            Button{
+                dismiss()
+            } label: {
+                Text("Sí")
+            }
+            
+            Button(role: .cancel, action: {}) {
+                Text("No")
+            }
+        }, message: {
+            Text("¿Estás seguro que quieres cerrar el artículo actual?")
+        })
         
     }
 }

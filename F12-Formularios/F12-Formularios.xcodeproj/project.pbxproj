@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011E76792AC80CAD009345B0 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E76782AC80CAD009345B0 /* CourseDetailView.swift */; };
 		01E0191A2AC2B49C006929AB /* F12_FormulariosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E019192AC2B49C006929AB /* F12_FormulariosApp.swift */; };
 		01E0191C2AC2B49C006929AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0191B2AC2B49C006929AB /* ContentView.swift */; };
 		01E0191E2AC2B49D006929AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E0191D2AC2B49D006929AB /* Assets.xcassets */; };
 		01E019212AC2B49D006929AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E019202AC2B49D006929AB /* Preview Assets.xcassets */; };
 		01E019282AC2B517006929AB /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E019272AC2B517006929AB /* Course.swift */; };
-		01E0192A2AC2B539006929AB /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E019292AC2B539006929AB /* CourseDetailView.swift */; };
 		01E0192C2AC33A46006929AB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0192B2AC33A46006929AB /* SettingsView.swift */; };
 		01E0192E2AC34D10006929AB /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0192D2AC34D10006929AB /* SettingsFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011E76782AC80CAD009345B0 /* CourseDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 		01E019162AC2B49C006929AB /* F12-Formularios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F12-Formularios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E019192AC2B49C006929AB /* F12_FormulariosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F12_FormulariosApp.swift; sourceTree = "<group>"; };
 		01E0191B2AC2B49C006929AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01E0191D2AC2B49D006929AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01E019202AC2B49D006929AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01E019272AC2B517006929AB /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		01E019292AC2B539006929AB /* CourseDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseDetailView.swift; path = "../../F09-Listas/F09-Listas/CourseDetailView.swift"; sourceTree = "<group>"; };
 		01E0192B2AC33A46006929AB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		01E0192D2AC34D10006929AB /* SettingsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +61,7 @@
 			children = (
 				01E019192AC2B49C006929AB /* F12_FormulariosApp.swift */,
 				01E0191B2AC2B49C006929AB /* ContentView.swift */,
-				01E019292AC2B539006929AB /* CourseDetailView.swift */,
+				011E76782AC80CAD009345B0 /* CourseDetailView.swift */,
 				01E019272AC2B517006929AB /* Course.swift */,
 				01E0191D2AC2B49D006929AB /* Assets.xcassets */,
 				01E0191F2AC2B49D006929AB /* Preview Content */,
@@ -151,9 +151,9 @@
 			files = (
 				01E0192C2AC33A46006929AB /* SettingsView.swift in Sources */,
 				01E0192E2AC34D10006929AB /* SettingsFactory.swift in Sources */,
-				01E0192A2AC2B539006929AB /* CourseDetailView.swift in Sources */,
 				01E019282AC2B517006929AB /* Course.swift in Sources */,
 				01E0191C2AC2B49C006929AB /* ContentView.swift in Sources */,
+				011E76792AC80CAD009345B0 /* CourseDetailView.swift in Sources */,
 				01E0191A2AC2B49C006929AB /* F12_FormulariosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
