@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01DA87662ACA9A6200415AA8 /* F15_GestosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA87652ACA9A6200415AA8 /* F15_GestosApp.swift */; };
+		01DA87682ACA9A6200415AA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA87672ACA9A6200415AA8 /* ContentView.swift */; };
+		01DA876A2ACA9A6300415AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DA87692ACA9A6300415AA8 /* Assets.xcassets */; };
+		01DA876D2ACA9A6300415AA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DA876C2ACA9A6300415AA8 /* Preview Assets.xcassets */; };
+		01DA87742ACA9FD500415AA8 /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA87732ACA9FD500415AA8 /* DragView.swift */; };
+		01DA87762ACAD60700415AA8 /* CombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA87752ACAD60700415AA8 /* CombineView.swift */; };
+		01DA87782ACADABB00415AA8 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA87772ACADABB00415AA8 /* DragState.swift */; };
+		01DA877A2ACADD6E00415AA8 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA87792ACADD6E00415AA8 /* DraggableView.swift */; };
+		01DA877C2ACADFF600415AA8 /* ScalableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA877B2ACADFF600415AA8 /* ScalableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01DA87622ACA9A6200415AA8 /* F15-Gestos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F15-Gestos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01DA87652ACA9A6200415AA8 /* F15_GestosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F15_GestosApp.swift; sourceTree = "<group>"; };
+		01DA87672ACA9A6200415AA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01DA87692ACA9A6300415AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01DA876C2ACA9A6300415AA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01DA87732ACA9FD500415AA8 /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		01DA87752ACAD60700415AA8 /* CombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineView.swift; sourceTree = "<group>"; };
+		01DA87772ACADABB00415AA8 /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
+		01DA87792ACADD6E00415AA8 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		01DA877B2ACADFF600415AA8 /* ScalableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01DA875F2ACA9A6200415AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01DA87592ACA9A6200415AA8 = {
+			isa = PBXGroup;
+			children = (
+				01DA87642ACA9A6200415AA8 /* F15-Gestos */,
+				01DA87632ACA9A6200415AA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01DA87632ACA9A6200415AA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01DA87622ACA9A6200415AA8 /* F15-Gestos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01DA87642ACA9A6200415AA8 /* F15-Gestos */ = {
+			isa = PBXGroup;
+			children = (
+				01DA87652ACA9A6200415AA8 /* F15_GestosApp.swift */,
+				01DA87672ACA9A6200415AA8 /* ContentView.swift */,
+				01DA87692ACA9A6300415AA8 /* Assets.xcassets */,
+				01DA876B2ACA9A6300415AA8 /* Preview Content */,
+				01DA87732ACA9FD500415AA8 /* DragView.swift */,
+				01DA87752ACAD60700415AA8 /* CombineView.swift */,
+				01DA87772ACADABB00415AA8 /* DragState.swift */,
+				01DA87792ACADD6E00415AA8 /* DraggableView.swift */,
+				01DA877B2ACADFF600415AA8 /* ScalableView.swift */,
+			);
+			path = "F15-Gestos";
+			sourceTree = "<group>";
+		};
+		01DA876B2ACA9A6300415AA8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01DA876C2ACA9A6300415AA8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01DA87612ACA9A6200415AA8 /* F15-Gestos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01DA87702ACA9A6300415AA8 /* Build configuration list for PBXNativeTarget "F15-Gestos" */;
+			buildPhases = (
+				01DA875E2ACA9A6200415AA8 /* Sources */,
+				01DA875F2ACA9A6200415AA8 /* Frameworks */,
+				01DA87602ACA9A6200415AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "F15-Gestos";
+			productName = "F15-Gestos";
+			productReference = 01DA87622ACA9A6200415AA8 /* F15-Gestos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01DA875A2ACA9A6200415AA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					01DA87612ACA9A6200415AA8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 01DA875D2ACA9A6200415AA8 /* Build configuration list for PBXProject "F15-Gestos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01DA87592ACA9A6200415AA8;
+			productRefGroup = 01DA87632ACA9A6200415AA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01DA87612ACA9A6200415AA8 /* F15-Gestos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01DA87602ACA9A6200415AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DA876D2ACA9A6300415AA8 /* Preview Assets.xcassets in Resources */,
+				01DA876A2ACA9A6300415AA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01DA875E2ACA9A6200415AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DA877A2ACADD6E00415AA8 /* DraggableView.swift in Sources */,
+				01DA877C2ACADFF600415AA8 /* ScalableView.swift in Sources */,
+				01DA87762ACAD60700415AA8 /* CombineView.swift in Sources */,
+				01DA87782ACADABB00415AA8 /* DragState.swift in Sources */,
+				01DA87682ACA9A6200415AA8 /* ContentView.swift in Sources */,
+				01DA87662ACA9A6200415AA8 /* F15_GestosApp.swift in Sources */,
+				01DA87742ACA9FD500415AA8 /* DragView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01DA876E2ACA9A6300415AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01DA876F2ACA9A6300415AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01DA87712ACA9A6300415AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"F15-Gestos/Preview Content\"";
+				DEVELOPMENT_TEAM = LV4V48ATK9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frogamesformacion.F15-Gestos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01DA87722ACA9A6300415AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"F15-Gestos/Preview Content\"";
+				DEVELOPMENT_TEAM = LV4V48ATK9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frogamesformacion.F15-Gestos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01DA875D2ACA9A6200415AA8 /* Build configuration list for PBXProject "F15-Gestos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01DA876E2ACA9A6300415AA8 /* Debug */,
+				01DA876F2ACA9A6300415AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01DA87702ACA9A6300415AA8 /* Build configuration list for PBXNativeTarget "F15-Gestos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01DA87712ACA9A6300415AA8 /* Debug */,
+				01DA87722ACA9A6300415AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01DA875A2ACA9A6200415AA8 /* Project object */;
+}
