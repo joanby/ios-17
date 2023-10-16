@@ -25,6 +25,8 @@ struct SearchBar : UIViewRepresentable {
         searchbar.autocapitalizationType = .none
         searchbar.placeholder = "Buscar una tarea..."
         
+        searchbar.delegate = context.coordinator
+        
         return searchbar
     }
     
@@ -32,4 +34,38 @@ struct SearchBar : UIViewRepresentable {
         //Actualizar la vista en función del contexto
         uiView.text = self.text
     }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(text: self.$text)
+    }
+    
+    class Coordinator: NSObject, UISearchBarDelegate {
+        @Binding var text: String
+        
+        init(text: Binding<String>) {
+            self._text = text
+        }
+        
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            
+            searchBar.showsCancelButton = true
+            self.text = searchText
+            
+            print("El nuevo texto es: \(text)")
+        }
+        
+        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            self.text = ""
+            searchBar.resignFirstResponder()
+            searchBar.showsCancelButton = false
+            searchBar.endEditing(true)
+        }
+        
+        func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+            searchBar.showsCancelButton = true
+            
+            return true
+        }
+    }
+    
 }
