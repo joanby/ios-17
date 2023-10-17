@@ -22,7 +22,7 @@ struct TitleView: View {
             Spacer()
             Rectangle()
                 .frame(minHeight: 100, maxHeight: 150)
-                .foregroundStyle(.white)
+                .foregroundStyle(Color(.sRGB, red: 1, green: 1, blue: 1, opacity: 0.5))
                 .overlay(
                     HStack{
                         VStack(alignment: .leading, content: {
@@ -42,7 +42,7 @@ struct TitleView: View {
                             if !self.isFullContent {
                                 Text(self.subtitle)
                                     .font(.subheadline)
-                                    .foregroundStyle(Color.secondary).minimumScaleFactor(0.3)
+                                    .foregroundStyle(Color.primary).minimumScaleFactor(0.7)
                                     .lineLimit(3)
                             }
                         })
