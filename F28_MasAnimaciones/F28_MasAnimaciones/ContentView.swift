@@ -53,3 +53,45 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+struct CircleToBackgroundView: View {
+    
+    @Namespace private var backgroundTransition
+    
+    @State private var expanded = false
+    
+    var body: some View {
+        if self.expanded{
+            //Fondo de pantalla
+            RoundedRectangle(cornerRadius: 20.0)
+                .matchedGeometryEffect(id: "shape", in: self.backgroundTransition)
+                .foregroundStyle(.purple)
+                .ignoresSafeArea()
+                
+                .onTapGesture {
+                    withAnimation {
+                        self.expanded.toggle()
+                    }
+                }
+        } else{
+            //Circulo
+            Spacer()
+            
+            RoundedRectangle(cornerRadius: 50)
+                .matchedGeometryEffect(id: "shape", in: self.backgroundTransition)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                .foregroundStyle(.teal)
+                
+                .onTapGesture {
+                    withAnimation {
+                        self.expanded.toggle()
+                    }
+                }
+        }
+    }
+}
+
+#Preview("Circle To Background View"){
+    CircleToBackgroundView()
+}
