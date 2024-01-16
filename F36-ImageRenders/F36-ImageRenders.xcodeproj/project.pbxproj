@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014B4EBF2B567A8B00779D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		016A1D9A2B4E832A00B647B8 /* F36-ImageRenders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F36-ImageRenders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		016A1D9D2B4E832A00B647B8 /* F36_ImageRendersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F36_ImageRendersApp.swift; sourceTree = "<group>"; };
 		016A1D9F2B4E832A00B647B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		016A1D9C2B4E832A00B647B8 /* F36-ImageRenders */ = {
 			isa = PBXGroup;
 			children = (
+				014B4EBF2B567A8B00779D46 /* Info.plist */,
 				016A1D9D2B4E832A00B647B8 /* F36_ImageRendersApp.swift */,
 				016A1D9F2B4E832A00B647B8 /* ContentView.swift */,
 				016A1DA12B4E832B00B647B8 /* Assets.xcassets */,
@@ -283,6 +285,8 @@
 				DEVELOPMENT_TEAM = LV4V48ATK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F36-ImageRenders/Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Para guardar imágenes generadas en la app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -313,6 +317,8 @@
 				DEVELOPMENT_TEAM = LV4V48ATK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F36-ImageRenders/Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Para guardar imágenes generadas en la app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

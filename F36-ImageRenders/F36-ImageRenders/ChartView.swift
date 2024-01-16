@@ -18,6 +18,11 @@ struct ChartView: View {
     
     
     var body: some View {
+        
+        VStack{
+            
+        Text("Gráfico de Líneas")
+                .font(.system(.title, design: .rounded))
         Chart{
             ForEach(chartData, id: \.city) { series in
                 ForEach(series.data) { item in
@@ -45,6 +50,11 @@ struct ChartView: View {
             content
                 .background(Color.teal.opacity(0.2))
         }
+            
+            Text("En la figura pueden verse las temperaturas de varias ciudades de España durante el año 2022-2023.")
+                .font(.system(.caption, design: .rounded))
+
+    }
     }
 }
 
