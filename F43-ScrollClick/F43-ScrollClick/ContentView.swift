@@ -18,11 +18,17 @@ struct ContentView: View {
             LazyVStack(spacing: 16){
                 ForEach(0...100, id: \.self) { idx in
                     self.colors[idx % self.colors.count]
-                        .frame(height: 120)
+                        .frame(height: 300)
                         .overlay {
                             Text("\(idx)")
                                 .font(.system(size: 80, weight: .bold, design: .rounded))
                                 .foregroundStyle(.white)
+                        }
+                        .scrollTransition(.animated.threshold(.visible(0.4))) { content, phase in
+                            content
+                                .opacity(phase.isIdentity ? 1.0 : 0.25)
+                                .scaleEffect(phase.isIdentity ? 1.0 : 0.25)
+                                .rotation3DEffect(.radians(phase.value*3.14), axis: (1, 1, 1))
                         }
                         .onTapGesture {
                             withAnimation {
